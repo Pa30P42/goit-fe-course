@@ -1,9 +1,41 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.container {
+    width: 900px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    font-size: 0px;
+}
+
 body {
     color: #626262;
     font-family: "Playfair Display", "Ubuntu", sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
+}
+
+
+/*Site navigatioon*/
+
+.site-navigation li {
+    display: inline-block;
+    border: 1px solid transparent;
+}
+
+.site-navigation {
+    padding: 72px 162px 98px 161px;
+    margin: 0;
+    list-style: none;
+    font-size: 0px
 }
 
 .site-navigation a {
@@ -16,12 +48,39 @@ body {
     text-decoration: none;
 }
 
-.site-navigation :hover {
+.site-navigation :hover,
+.site-navigation :focus {
     color: #03a9f4
 }
 
-.site-navigation {
-    list-style: none;
+.ls {
+    margin-right: 120px;
+}
+
+.ph {
+    margin-right: 100px;
+}
+
+.ms {
+    margin-right: 92px;
+}
+
+tr {
+    margin-right: 0px;
+}
+
+
+/*Articles*/
+
+.art {
+    display: inline-block;
+    width: 420px;
+    height: 480px;
+    overflow: hidden;
+}
+
+.art:nth-of-type(2n+1) {
+    margin-right: 60px;
 }
 
 .sign {
@@ -32,6 +91,13 @@ body {
     text-transform: uppercase;
 }
 
+.title {
+    color: #626262;
+    font-family: "Playfair Display";
+    font-size: 30px;
+    font-weight: 400;
+}
+
 .description {
     color: #626262;
     font-family: "Playfair Display";
@@ -40,12 +106,16 @@ body {
     line-height: 24px;
 }
 
-button {
+.load-button {
+    border: 1px solid;
+    margin: 48px 375px 0px 360px;
+    padding: 19px 33px 20px 32px;
     color: #626262;
     font-family: "Playfair Display";
     font-size: 20px;
     font-weight: 400;
     line-height: 24px;
+    cursor: pointer;
 }
 
 .visually-hidden:not(:focus):not(:active),
