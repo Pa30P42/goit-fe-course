@@ -10,9 +10,7 @@ html {
 
 .container {
     width: 900px;
-    background-color: #ffffff;
     margin: 0 auto;
-    font-size: 0px;
 }
 
 body {
@@ -28,17 +26,22 @@ body {
 
 .site-navigation li {
     display: inline-block;
-    border: 1px solid transparent;
+}
+
+.site-navigation li:not(:last-child) {
+    margin-right: 102px;
 }
 
 .site-navigation {
-    padding: 72px 162px 98px 161px;
+    padding: 72px 0px 98px 0px;
+    text-align: center;
     margin: 0;
     list-style: none;
     font-size: 0px
 }
 
 .site-navigation a {
+    display: block;
     color: #626262;
     font-family: "Playfair Display";
     font-size: 14px;
@@ -53,37 +56,28 @@ body {
     color: #03a9f4
 }
 
-.ls {
-    margin-right: 120px;
-}
-
-.ph {
-    margin-right: 100px;
-}
-
-.ms {
-    margin-right: 92px;
-}
-
-tr {
-    margin-right: 0px;
-}
-
 
 /*Articles*/
+
+.main-section {
+    font-size: 0px;
+}
 
 .art {
     display: inline-block;
     width: 420px;
-    height: 480px;
-    overflow: hidden;
 }
 
 .art:nth-of-type(2n+1) {
     margin-right: 60px;
 }
 
+.photo {
+    margin: 0px 0px 16px 0px;
+}
+
 .sign {
+    margin: 0px 0px 26px 0px;
     color: #b4ad9e;
     font-family: Ubuntu;
     font-size: 14px;
@@ -92,6 +86,7 @@ tr {
 }
 
 .title {
+    margin: 0px 0px 32px 0px;
     color: #626262;
     font-family: "Playfair Display";
     font-size: 30px;
@@ -116,6 +111,11 @@ tr {
     font-weight: 400;
     line-height: 24px;
     cursor: pointer;
+}
+
+.load-button:hover,
+.load-button:focus {
+    color: #03a9f4
 }
 
 .visually-hidden:not(:focus):not(:active),
