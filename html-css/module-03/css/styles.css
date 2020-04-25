@@ -1,134 +1,137 @@
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 .container {
-    width: 900px;
-    margin: 0 auto;
+  width: 900px;
+  margin: 0 auto;
 }
 
 body {
-    color: #626262;
-    font-family: "Playfair Display", "Ubuntu", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
+  color: #626262;
+  font-family: "Playfair Display", "Ubuntu", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
 }
-
 
 /*Site navigatioon*/
 
 .site-navigation li {
-    display: inline-block;
+  display: inline-block;
 }
 
 .site-navigation li:not(:last-child) {
-    margin-right: 102px;
+  margin-right: 102px;
+}
+
+.site-navigation:hover,
+.site-navigation:focus {
+  color: #03a9f4;
 }
 
 .site-navigation {
-    padding: 72px 0px 98px 0px;
-    text-align: center;
-    margin: 0;
-    list-style: none;
-    font-size: 0px
+  padding: 72px 0px 98px 0px;
+  text-align: center;
+  margin: 0;
+  list-style: none;
+  font-size: 0px;
 }
 
 .site-navigation a {
-    display: block;
-    color: #626262;
-    font-family: "Playfair Display";
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
-    text-transform: uppercase;
-    text-decoration: none;
+  display: block;
+  color: #626262;
+  font-family: "Playfair Display";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
 }
-
-.site-navigation :hover,
-.site-navigation :focus {
-    color: #03a9f4
-}
-
 
 /*Articles*/
 
 .main-section {
-    font-size: 0px;
+  font-size: 0px;
 }
 
 .art {
-    display: inline-block;
-    width: 420px;
+  display: inline-block;
+  width: 420px;
+  margin-bottom: 130px;
 }
 
-.art:nth-of-type(2n+1) {
-    margin-right: 60px;
+.art:nth-of-type(2n + 1) {
+  margin-right: 60px;
+}
+.art:nth-last-of-type(-n + 2) {
+  margin-bottom: 52px;
 }
 
 .photo {
-    margin: 0px 0px 16px 0px;
+  margin: 0px 0px 16px 0px;
 }
 
 .sign {
-    margin: 0px 0px 26px 0px;
-    color: #b4ad9e;
-    font-family: Ubuntu;
-    font-size: 14px;
-    font-weight: 300;
-    text-transform: uppercase;
+  margin: 0px 0px 26px 0px;
+  color: #b4ad9e;
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
 }
 
 .title {
-    margin: 0px 0px 32px 0px;
-    color: #626262;
-    font-family: "Playfair Display";
-    font-size: 30px;
-    font-weight: 400;
+  margin: 0px 0px 32px 0px;
+  color: #626262;
+  font-family: "Playfair Display";
+  font-size: 30px;
+  font-weight: 400;
 }
 
 .description {
-    color: #626262;
-    font-family: "Playfair Display";
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
+  margin: 0px;
+  color: #626262;
+  font-family: "Playfair Display";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 .load-button {
-    border: 1px solid;
-    margin: 48px 375px 0px 360px;
-    padding: 19px 33px 20px 32px;
-    color: #626262;
-    font-family: "Playfair Display";
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 24px;
-    cursor: pointer;
+  border: 1px solid;
+  margin: 0px 375px 0px 360px;
+  padding: 19px 33px 20px 32px;
+  color: #626262;
+  font-family: "Playfair Display";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  cursor: pointer;
 }
 
 .load-button:hover,
 .load-button:focus {
-    color: #03a9f4
+  color: #03a9f4;
 }
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: 1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: 1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
