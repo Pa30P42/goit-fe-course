@@ -1,0 +1,244 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: 1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.clearfix::after {
+    display: table;
+    content: '';
+    clear: both;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    padding: 0px;
+    margin: 0px auto;
+}
+
+.container {
+    width: 1110px;
+    margin: 0 auto;
+}
+
+
+/*Header*/
+
+.site-navigation {
+    width: 1110px;
+    margin: 0 auto;
+    padding: 38px 0 96px;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+    color: #1abc9c;
+}
+
+.site-logo {
+    float: left;
+    text-decoration: none;
+    vertical-align: middle;
+    color: #555252;
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 36px;
+    text-transform: uppercase;
+}
+
+.site-logo::first-letter {
+    color: #1abc9c;
+    font-size: 30px;
+    line-height: 36px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
+
+.navigation-list {
+    min-width: 478px;
+    margin: 0px;
+    padding: 4px 0px 0px 0px;
+    float: right;
+    list-style: none;
+}
+
+.navigation-list a {
+    display: block;
+    color: #0f0101;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.navigation-list li {
+    float: left;
+}
+
+.navigation-list li:not(:last-child) {
+    margin-right: 32px;
+}
+
+
+/*Slider*/
+
+.slider-image {
+    object-fit: cover;
+}
+
+.slider-wrapper {
+    min-height: 100%;
+}
+
+.slider-main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    min-width: 740px;
+}
+
+.slider-background {
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45));
+}
+
+.slider-title {
+    margin: 0px;
+    margin-bottom: 30px;
+    padding: 0px;
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: -1.2px;
+    line-height: 82px;
+    text-transform: uppercase;
+}
+
+.slider-description {
+    margin: 0px;
+    padding: 0px;
+    font-size: 18px;
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    letter-spacing: -0.48px;
+}
+
+
+/*New Collection*/
+
+.new-collection-section {
+    background-color: #e9f0fd;
+    padding-top: 96px;
+    padding-bottom: 96px;
+}
+
+.section-title::after {
+    display: table;
+    content: '';
+    margin: 34px auto 0px;
+    width: 164px;
+    height: 7px;
+    background-color: #1abc9c;
+}
+
+.product-list {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.product-list li {
+    float: left;
+}
+
+.product-list li:not(:nth-child(4n)) {
+    margin-right: 30px;
+}
+
+.section-title {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    color: #515151;
+    font-family: "Roboto", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.96px;
+}
+
+.product-name-link {
+    display: block;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.product-image-link {
+    display: block;
+    height: 282px;
+}
+
+.product-name-container {
+    background-color: #323232;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: -0.36px;
+}
+
+.item-title {
+    float: left;
+    margin: 0;
+    padding: 0;
+    padding-left: 14px;
+    height: 40px;
+    padding-top: 5px;
+}
+
+span {
+    float: right;
+    width: 54px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.44);
+    padding-top: 5px;
+    text-align: center;
+}
