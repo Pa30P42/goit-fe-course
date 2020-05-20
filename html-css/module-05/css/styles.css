@@ -108,14 +108,6 @@ body {
 
 /*Slider*/
 
-.slider-image {
-    object-fit: cover;
-}
-
-.slider-wrapper {
-    min-height: 100%;
-}
-
 .slider-main {
     position: absolute;
     top: 50%;
@@ -129,10 +121,28 @@ body {
 
 .slider-background {
     position: relative;
-    background-size: cover;
-    background-repeat: no-repeat;
+}
+
+.slider-image {
     height: 600px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45));
+    width: 100%;
+    object-fit: cover;
+}
+
+.slider-background::before {
+    content: '';
+    display: table;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.52);
+}
+
+.slider-wrapper {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
 }
 
 .slider-title {
@@ -158,6 +168,35 @@ body {
     letter-spacing: -0.48px;
 }
 
+.slider-btn {
+    cursor: pointer;
+    border: 0px;
+    height: 104px;
+    width: 104px;
+    background-color: #4ec6ab;
+    opacity: 0.65;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slider-btn:hover,
+.slider-btn:focus {
+    background-color: #1abc9c;
+    opacity: 1;
+}
+
+.next {
+    float: right;
+    background-image: url('../img/icons/next.png');
+}
+
+.prev {
+    float: left;
+    background-image: url(../img/icons/prev.png);
+}
+
+.slider-button-wrapper {}
+
 
 /*New Collection*/
 
@@ -182,12 +221,25 @@ body {
     list-style: none;
 }
 
-.product-list li {
+
+/*.product-list-items {
     float: left;
 }
 
-.product-list li:not(:nth-child(4n)) {
+.product-list-items:not(:nth-child(4)) {
     margin-right: 30px;
+}*/
+
+.product-list>li {
+    float: left;
+}
+
+.product-list>li:not(:last-of-type) {
+    margin-right: 30px;
+}
+
+.product-list>li :nth-child(4) {
+    margin-right: 0px;
 }
 
 .section-title {
@@ -207,6 +259,10 @@ body {
     margin: 0;
     padding: 0;
     text-decoration: none;
+}
+
+.product-name-link :hover {
+    background-color: #1abc9c;
 }
 
 .product-image-link {
@@ -241,4 +297,127 @@ span {
     background-color: rgba(255, 255, 255, 0.44);
     padding-top: 5px;
     text-align: center;
+}
+
+.overlay-options {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0px;
+    padding: 0px;
+    width: 170px;
+    height: 110px;
+    list-style: none;
+}
+
+.item-buy-option {
+    float: left;
+}
+
+.item-buy-option:not(:nth-of-type(n+3)) {
+    margin-right: 10px;
+}
+
+.overlay-btn {
+    padding: 0px;
+    border: 1px solid #ffffff;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.overlay-btn:hover {
+    background-color: #1abc9c;
+}
+
+.to-buy {
+    padding-right: 18px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: 12px;
+    text-align: right;
+    border: 0px;
+    width: 170px;
+    height: 50px;
+    color: #ffffff;
+    background-color: #323232;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 32px;
+    text-transform: uppercase;
+    letter-spacing: -0.28px;
+    background-image: url(../img/icons/to-buy.png);
+}
+
+.heart {
+    background-image: url(../img/icons/heart.png);
+}
+
+.to-mix {
+    background-image: url(../img/icons/to-mix.png);
+}
+
+.time {
+    background-image: url(../img/icons/time.png);
+}
+
+.slide__list-img-item {
+    position: relative;
+}
+
+.overlay {
+    content: '';
+    display: table;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(85, 85, 85, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-clip: padding-box;
+    border: 10px solid rgba(255, 255, 255, 0.5);
+    opacity: 0;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+
+/*Footer*/
+
+.foot {
+    background-color: #323232;
+}
+
+.footer-container {
+    height: 88px;
+    position: relative;
+}
+
+.footer-container-middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.footer-title {
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    color: #fefefe;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.footer-title-link {
+    color: #46bfa9;
 }

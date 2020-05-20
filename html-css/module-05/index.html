@@ -9,6 +9,43 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <!-- Code injected by live-server -->
+    <script type="text/javascript">
+        // <![CDATA[  <-- For SVG support
+        if ('WebSocket' in window) {
+            (function() {
+                function refreshCSS() {
+                    var sheets = [].slice.call(document.getElementsByTagName("link"));
+                    var head = document.getElementsByTagName("head")[0];
+                    for (var i = 0; i < sheets.length; ++i) {
+                        var elem = sheets[i];
+                        var parent = elem.parentElement || head;
+                        parent.removeChild(elem);
+                        var rel = elem.rel;
+                        if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                            var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                            elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                        }
+                        parent.appendChild(elem);
+                    }
+                }
+                var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+                var address = protocol + window.location.host + window.location.pathname + '/ws';
+                var socket = new WebSocket(address);
+                socket.onmessage = function(msg) {
+                    if (msg.data == 'reload') window.location.reload();
+                    else if (msg.data == 'refreshcss') refreshCSS();
+                };
+                if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                    console.log('Live reload enabled.');
+                    sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+                }
+            })();
+        } else {
+            console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+        }
+        // ]]>
+    </script>
 </head>
 
 <body>
@@ -40,9 +77,9 @@
                     <p class="slider-description">CITY TOURS / TOUR TICKETS / TOUR GUIDES</p>
                 </li>
             </ul>
-            <div class="slider-button-wrapper">
-                <button class="slider-btn-prev"></button>
-                <button class="slider-bt-next"></button>
+            <div class="slider-button-wrapper ">
+                <button class="slider-btn prev"></button>
+                <button class="slider-btn next"></button>
             </div>
         </div>
     </div>
@@ -50,10 +87,27 @@
     <section class="new-collection-section clearfix">
         <div class="container">
             <h2 class="section-title">New collection</h2>
-            <ul class="product-list">
-                <li>
-                    <a class="product-image-link" href="#"><img src="./img/product-01.png" alt="some photo" width="255" height="282" /></a>
-
+            <ul class="product-list ">
+                <li class="product-list-items">
+                    <div class="slide__list-img-item">
+                        <img class="product-image-link" src="./img/product-01.png" alt="some photo" width="255" height="282" />
+                        <div class="overlay">
+                            <ul class="overlay-options">
+                                <li class="item-buy-option">
+                                    <button class="overlay-btn heart"></button>
+                                </li>
+                                <li class="item-buy-option">
+                                    <button class="overlay-btn to-mix"></button>
+                                </li>
+                                <li class="item-buy-option">
+                                    <button class="overlay-btn time"></button>
+                                </li>
+                                <li class="item-buy-option">
+                                    <button class="overlay-btn to-buy">add to cart</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                     <a class="product-name-link" href="#">
                         <div class="product-name-container clearfix">
                             <h3 class="item-title">Blue Tshirt</h3>
@@ -62,20 +116,56 @@
                         </div>
                     </a>
                 </li>
-                <li>
-                    <a class="product-image-link" href="#"><img src="./img/product-02.png" alt="some photo" width="255" height="282" /></a>
 
+                <li class="product-list-items">
+                    <div class="slide__list-img-item">
+                        <img class="product-image-link" src="./img/product-02.png" alt="some photo" width="255" height="282" />
+                        <div class="overlay">
+                            <ul class="overlay-options">
+                                <li class="item-buy-option">
+                                    <button class="overlay-btn heart"></button>
+                                </li>
+                                <li class="item-buy-option">
+                                    <button class="overlay-btn to-mix"></button>
+                                </li>
+                                <li class="item-buy-option">
+                                    <button class="overlay-btn time"></button>
+                                </li>
+                                <li class="item-buy-option">
+                                    <button class="overlay-btn to-buy">add to cart</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                     <a class="product-name-link" href="#">
                         <div class="product-name-container clearfix">
-                            <h3 class="item-title">woman shirt</h3>
+                            <h3 class="item-title">Woman shirt</h3>
 
                             <span>31$</span>
                         </div>
                     </a>
                 </li>
-                <li>
-                    <a class="product-image-link" href="#"><img src="./img/product-03.png" alt="some photo" width="255" height="282" /></a>
+                <li class="product-list-items">
 
+                    <div class="slide__list-img-item">
+                        <img class="product-image-link" src="./img/product-03.png" alt="some photo" width="255" height="282" />
+                        <div class="overlay">
+                            <ul class="overlay-options">
+                                <li class="item-buy-option">
+                                    <button class="overlay-btn heart"></button>
+                                </li>
+                                <li class="item-buy-option">
+                                    <button class="overlay-btn to-mix"></button>
+                                </li>
+                                <li class="item-buy-option">
+                                    <button class="overlay-btn time"></button>
+                                </li>
+                                <li class="item-buy-option">
+                                    <button class="overlay-btn to-buy">add to cart</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                     <a class="product-name-link" href="#">
                         <div class="product-name-container clearfix">
                             <h3 class="item-title">Yellow Tshirt</h3>
@@ -84,12 +174,30 @@
                         </div>
                     </a>
                 </li>
-                <li>
-                    <a class="product-image-link" href="#"><img src="./img/product-04.png" alt="some photo" width="255" height="282" /></a>
+                <li class="product-list-items">
 
+                    <div class="slide__list-img-item">
+                        <img class="product-image-link" src="./img/product-04.png" alt="some photo" width="255" height="282" />
+                        <div class="overlay">
+                            <ul class="overlay-options">
+                                <li class="item-buy-option">
+                                    <button class="overlay-btn heart"></button>
+                                </li>
+                                <li class="item-buy-option">
+                                    <button class="overlay-btn to-mix"></button>
+                                </li>
+                                <li class="item-buy-option">
+                                    <button class="overlay-btn time"></button>
+                                </li>
+                                <li class="item-buy-option">
+                                    <button class="overlay-btn to-buy">add to cart</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                     <a class="product-name-link" href="#">
                         <div class="product-name-container clearfix">
-                            <h3 class="item-title">cool lingerie</h3>
+                            <h3 class="item-title">Cool Lingerie</h3>
 
                             <span>56$</span>
                         </div>
@@ -100,7 +208,12 @@
         </div>
     </section>
     <footer class="foot">
-        <div class="container">
-            <img src="./img/All_Rights_Reserved_©_Dokan__Designed_ThemenGraph.png" alt="footer-title">
+        <div class="container ">
+            <div class="footer-container clearfix">
+                <div class="footer-container-middle">
+                    <p class="footer-title">All Rights Reserved © Dokan | Designed </p>
+                    <p class="footer-title footer-title-link">ThemenGraph</span>
+                </div>
+            </div>
         </div>
     </footer>
