@@ -261,7 +261,7 @@ body {
     text-decoration: none;
 }
 
-.product-name-link :hover {
+.product-list-items:hover .product-name-link {
     background-color: #1abc9c;
 }
 
