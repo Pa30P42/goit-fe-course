@@ -1,0 +1,235 @@
+html {
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #95e1d3;
+    --secondary-color: #f38181;
+    --main-text-color: #333333;
+    --secondary-text-color: #999999;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    padding: 0px;
+    margin: 0px;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: 1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.clearfix::after {
+    display: table;
+    content: '';
+    clear: both;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    padding: 0px;
+    margin: 0px auto;
+}
+
+.container {
+    width: 1202px;
+    margin: 0 auto;
+}
+
+
+/*Header*/
+
+.site-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 20px 0px;
+}
+
+.site-logo {
+    font-size: 30px;
+    font-family: Montserrat;
+    font-weight: 700;
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+.navigation-list {
+    display: flex;
+    list-style: none;
+}
+
+.navigation-list a {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+.navigation-list :not(:last-child) {
+    margin-right: 58px;
+}
+
+.navigation-list a::after {
+    display: table;
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: var(--secondary-color);
+    margin-top: 10px;
+    transition: all 200ms linear;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.navigation-list a:hover::after,
+.navigation-list a:focus::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/*Amazing services*/
+
+.section-title {
+    font-family: "Kaushan Script";
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--main-text-color);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section-title-part {
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--main-text-color);
+    text-align: center;
+    display: block;
+    margin-bottom: 64px;
+}
+
+.section-title-part::after {
+    display: table;
+    content: '';
+    width: 60px;
+    height: 3px;
+    background-color: var(--secondary-color);
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.amazing-services-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.amazing-services-list li {
+    display: flex;
+    width: 365px;
+}
+
+.amazing-services-list li:nth-of-type(-n+3) {
+    margin-bottom: 100px;
+}
+
+.amazing-services-list li::before {
+    display: table;
+    content: '';
+    width: 80px;
+    height: 80px;
+    background-image: url(../img/article-icons/ALARM.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    padding-left: 20px;
+    padding-right: 30px;
+}
+
+.amazing-services-title {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--main-text-color);
+    margin-bottom: 18px;
+}
+
+.amazing-services-description {
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--secondary-text-color);
+}
+
+.sections {
+    padding-top: 100px;
+}
+
+
+/*Team-section*/
+
+.team-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.team-list-photo {
+    margin-bottom: 30px;
+}
+
+.team-description {
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--secondary-text-color);
+    max-width: 950px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 90px;
+}
+
+.team-member-name {
+    color: var(--main-text-color);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.team-member-position {
+    color: var(--secondary-text-color);
+    font-family: "Roboto - Light Italic";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+}
