@@ -162,11 +162,34 @@ body {
     content: '';
     width: 80px;
     height: 80px;
-    background-image: url(../img/article-icons/ALARM.png);
     background-repeat: no-repeat;
     background-position: top;
     padding-left: 20px;
     padding-right: 30px;
+}
+
+.amazing-services-list li:nth-of-type(1)::before {
+    background-image: url(../img/article-icons/ALARM.png);
+}
+
+.amazing-services-list li:nth-of-type(2)::before {
+    background-image: url(../img/article-icons/LINE_GRAPH.png);
+}
+
+.amazing-services-list li:nth-of-type(3)::before {
+    background-image: url(../img/article-icons/_OK.png);
+}
+
+.amazing-services-list li:nth-of-type(4)::before {
+    background-image: url(../img/article-icons/BOOK_2.png);
+}
+
+.amazing-services-list li:nth-of-type(5)::before {
+    background-image: url(../img/article-icons/HOME.png);
+}
+
+.amazing-services-list li:nth-of-type(6)::before {
+    background-image: url(../img/article-icons/IMAGE.png);
 }
 
 .amazing-services-title {
@@ -193,6 +216,10 @@ body {
 
 /*Team-section*/
 
+.team-section {
+    padding-bottom: 80px;
+}
+
 .team-list {
     list-style: none;
     display: flex;
@@ -201,6 +228,7 @@ body {
 
 .team-list-photo {
     margin-bottom: 30px;
+    transition: all 200ms linear;
 }
 
 .team-description {
@@ -232,4 +260,145 @@ body {
     font-weight: 400;
     line-height: 24px;
     text-align: center;
+}
+
+
+/*overlay*/
+
+.team-list-item:hover .overlay {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-10px, -10px);
+    box-shadow: 10px 10px 0 0 var(--main-color);
+}
+
+.team-list-item:hover .team-list-photo {
+    transform: translate(-10px, -10px);
+}
+
+.overlay-img-wrapper {
+    position: relative;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 200ms linear;
+    visibility: hidden;
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+}
+
+.social-links a:hover {
+    background-color: var(--main-color);
+}
+
+.social-links a {
+    display: block;
+    height: 56px;
+    width: 56px;
+    background-color: #fce38a;
+    background-clip: padding-box;
+    border: 1px solid transparent;
+}
+
+.icon-facebook {
+    background-image: url(../img/social-icons/facebook.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon-twitter {
+    background-image: url(../img/social-icons/twitter.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon-pinterest {
+    background-image: url(../img/social-icons/pinterest.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon-instagramm {
+    background-image: url(../img/social-icons/instagram.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/*Footer*/
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #e5e5e5;
+    padding-top: 10px;
+    padding-bottom: 12px;
+}
+
+.main-footer {}
+
+.footer-link {
+    display: flex;
+}
+
+.footer-link>p {
+    color: var(--main-text-color);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    margin-right: 5px;
+}
+
+.footer-link>a {
+    color: var(--secondary-color);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.subscribe-btn {
+    border: 0px;
+    width: 150px;
+    height: 40px;
+    background-color: var(--main-color);
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+input::placeholder {
+    color: #cccccc;
+    font-family: "Roboto - Light Italic";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+input {
+    width: 230px;
+    height: 40px;
+    border: 1px solid #e7e7e7;
+    background-color: #ffffff;
+}
+
+.input-box {
+    display: flex;
 }
