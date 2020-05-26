@@ -234,6 +234,10 @@ body {
     justify-content: space-between;
 }
 
+.services-list li {
+    width: 312px;
+}
+
 .services-list li::before {
     display: table;
     content: '';
@@ -325,14 +329,21 @@ body {
 .form-container {
     display: flex;
     padding-bottom: 30px;
+    justify-content: space-between;
 }
 
 .input-item {
-    width: 455px;
+    width: 100%;
     height: 50px;
     border: 1px solid #cccccc;
     background-color: #ffffff;
     border-radius: 3px;
+    border-radius: 3px;
+    letter-spacing: -0.35px;
+    font-family: var(--main-font);
+    font-size: 14px;
+    font-weight: 700;
+    padding-left: 20px;
 }
 
 .input-item:focus {
@@ -361,7 +372,7 @@ body {
 
 .form-list {
     list-style: none;
-    width: calc((100%-30px)/2);
+    width: calc((100% - 30px)/2);
 }
 
 .form-list li:not(:last-of-type) {
@@ -369,20 +380,21 @@ body {
 }
 
 .message {
-    width: calc((100%-30px)/2);
+    width: calc((100% - 30px)/2);
     resize: none;
     border-radius: 3px;
-}
-
-::placeholder {
     letter-spacing: -0.35px;
     font-family: var(--main-font);
     font-size: 14px;
     font-weight: 700;
-    text-transform: uppercase;
-    color: #bbbbbb;
     padding-top: 20px;
     padding-left: 20px;
+    padding-right: 20px;
+}
+
+::placeholder {
+    text-transform: uppercase;
+    color: #bbbbbb;
 }
 
 .send-btn {
