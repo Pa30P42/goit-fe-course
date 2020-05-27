@@ -274,7 +274,7 @@
             }
             .hero {
                 padding-top: 225px;
-                background-image: url(../img/backgroud-desktop.jpg);
+                background-image: url(../img/background-tablet.jpg);
             }
             .main-header {
                 padding-top: 50px;
@@ -298,7 +298,9 @@
         
         @media (min-width: 1024px) {
             .hero {
-                padding-top: 184px;
-                background-image: url(../img/background-tablet.jpg);
+                background-image: url(../img/backgroud-desktop.jpg);
+            }
+            .team-list-members {
+                width: 940px;
             }
         }
