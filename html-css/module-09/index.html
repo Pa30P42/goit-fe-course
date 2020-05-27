@@ -11,11 +11,14 @@
 </head>
 
 <body>
-    <header>
+    <header class="main-header ">
         <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-4 col-lg-3">
-                    <ul>
+            <div class="row justify-content-md-between">
+                <div class="col-12 col-md-4 col-lg-3 d-none d-md-block">
+                    <a href="#" class="logotype">URLAUBSGLÜCK</a>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3 ">
+                    <ul class="sign-btn-list d-flex  justify-content-center ">
                         <li>
                             <button class="log-in">Log In</button>
                         </li>
@@ -24,22 +27,54 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-12 col-md-4 col-lg-3 d-none d-md-block">
-                    <a href="#" class="logotype">URLAUBSGLÜCK</a>
-                </div>
+
             </div>
 
         </div>
     </header>
     <main>
         <section class="hero">
-            <div class="row">
-                <div class="container">
-                    <div class="col-12 col-md-8">
+            <div class="container">
+                <div class="row justify-content-center ">
+                    <div class="col-12 col-md-8 text-center">
                         <a href="#" class="logotype d-md-none">URLAUBSGLÜCK</a>
                         <h1 class="main-title">Share your holiday dreams</h1>
                         <p class="title-description">And find the perfect partner to fullfill it</p>
-                        <a href="#" class="find-partner-link">Find your holiday partner</a>
+                        <a href="#" class="find-partner-link d-block">Find your holiday partner</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="team-section ">
+            <div class="container ">
+                <div class="row d-md-flex justify-content-md-center">
+                    <div class="col-12 col-md-8">
+                        <h2 class="team-section-title">Meet a partner for your best holiday</h2>
+                    </div>
+                    <div class="col-12 col-md-8 col-lg-3 d-flex flex-wrap justify-content-center ">
+                        <ul class="team-list-members d-flex flex-wrap justify-content-center justify-content-md-between">
+                            <li>
+                                <div class="team-img-wrapper d-flex justify-content-center"><img class="team-member-image" height="121" width="121" alt="member-photo" src="./img/member-01.jpg"></div>
+                                <h3 class="team-member-name">Bradley Hunter</h3>
+                                <p class="member-description">Based in Chicago. I love playing tennis and loud music.</p>
+                            </li>
+                            <li>
+                                <div class="team-img-wrapper d-flex justify-content-center"><img class="team-member-image" height="121" width="121" alt="member-photo" src="./img/member-02.jpg"></div>
+                                <h3 class="team-member-name">Lucas Marsha</h3>
+                                <p class="member-description">I get my inspiration from nature and objects around me. I have a passion to colours, typography and skateboards.</p>
+                            </li>
+                            <li>
+                                <div class="team-img-wrapper d-flex justify-content-center"><img class="team-member-image" height="121" width="121" alt="member-photo" src="./img/member-03.jpg"></div>
+                                <h3 class="team-member-name">Heather Walker</h3>
+                                <p class="member-description">I'm a happy person that loves cats and climbing on mountains.</p>
+                            </li>
+                            <li>
+                                <div class="team-img-wrapper d-flex justify-content-center"><img class="team-member-image" height="121" width="121" alt="member-photo" src="./img/member-04.jpg"></div>
+                                <h3 class="team-member-name">Bradley Hunter</h3>
+                                <p class="member-description">Based in Chicago. I love playing tennis and loud music.</p>
+                            </li>
+                        </ul>
+                        <a href="#" class="other-partners d-block">See other partners</a>
                     </div>
                 </div>
             </div>
