@@ -189,7 +189,7 @@
         }
         
         .team-list-members li {
-            width: 200px;
+            /* width: 200px; */
             text-align: center;
             margin-bottom: 30px;
         }
