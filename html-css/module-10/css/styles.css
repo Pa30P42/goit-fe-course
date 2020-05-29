@@ -178,6 +178,7 @@ ol {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    padding-top: 10px;
 }
 
 .menu-list li {
@@ -232,6 +233,8 @@ ol {
     background-color: transparent;
     border: 0px;
     cursor: pointer;
+    width: 20px;
+    height: 20px;
 }
 
 .interaction-btn-wrapper__item_brascket_svg {
@@ -293,8 +296,7 @@ ol {
 }
 
 .header-title__load-more-btn:hover {
-    border: 2 px solid tomato;
-    color: tomato;
+    background-color: tomato;
 }
 
 .header-title {
