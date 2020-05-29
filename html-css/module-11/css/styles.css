@@ -349,7 +349,7 @@ ol {
     margin-top: 40px;
 }
 
-.services__list {
+.amazing-services__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -360,45 +360,45 @@ ol {
     justify-content: space-between;
 }
 
-.services__list_item {
+.amazing-services__list_item {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     width: 360px;
 }
 
-.services__list_item:nth-of-type(-n+3) {
+.amazing-services__list_item:nth-of-type(-n+3) {
     margin-bottom: 100px;
 }
 
-.services__list_img {
+.amazing-services__list_img {
     width: 60px;
     background-image: url(../img/section-icons/ALARM.svg);
     background-repeat: no-repeat;
     background-position: top center;
 }
 
-.services__list li:nth-of-type(2) .services__list_img {
+.amazing-services__list li:nth-of-type(2) .amazing-services__list_img {
     background-image: url(../img/section-icons/LINE_GRAPH.svg);
 }
 
-.services__list li:nth-of-type(3) .services__list_img {
-    background-image: url(../img/section-icons/OK.svg);
+.amazing-services__list li:nth-of-type(3) .amazing-services__list_img {
+    background-image: url(../img/section-icons/_OK.svg);
 }
 
-.services__list li:nth-of-type(4) .services__list_img {
+.amazing-services__list li:nth-of-type(4) .amazing-services__list_img {
     background-image: url(../img/section-icons/BOOK_2.svg);
 }
 
-.services__list li:nth-of-type(5) .services__list_img {
+.amazing-services__list li:nth-of-type(5) .amazing-services__list_img {
     background-image: url(../img/section-icons/HOME.svg);
 }
 
-.services__list li:nth-of-type(6) .services__list_img {
+.amazing-services__list li:nth-of-type(6) .amazing-services__list_img {
     background-image: url(../img/section-icons/LINE_GRAPH.svg);
 }
 
-.services__list_title {
+.amazing-services__list_title {
     color: #333333;
     font-family: Montserrat;
     font-size: 14px;
@@ -407,7 +407,7 @@ ol {
     padding-bottom: 22px;
 }
 
-.services__list_description {
+.amazing-services__list_description {
     color: #999999;
     font-family: Roboto;
     font-size: 15px;
@@ -415,14 +415,14 @@ ol {
     line-height: 24px;
 }
 
-.services__list_wrapper {
+.amazing-services__list_wrapper {
     padding-left: 30px;
 }
 
 
 /*team*/
 
-.team__description {
+.amazing-team__description {
     color: #999999;
     font-family: Roboto;
     font-size: 15px;
