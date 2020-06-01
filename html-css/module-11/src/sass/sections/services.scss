@@ -1,0 +1,98 @@
+.titles {
+  color: $secondary-text-color;
+  font-family: 'Kaushan Script';
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 50px;
+  padding-bottom: 64px;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: $secondary-accent-color;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+}
+
+.titles-second {
+  color: $secondary-text-color;
+  font-family: $main-font;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: block;
+}
+
+.sections {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.services {
+  &__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  &__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 360px;
+
+    &_title {
+      color: $secondary-text-color;
+      font-family: $main-font;
+      font-size: 14px;
+      font-weight: 400;
+      text-transform: uppercase;
+      padding-bottom: 22px;
+    }
+    &_description {
+      color: $third-text-color;
+      font-family: $secondary-font;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 24px;
+    }
+
+    &:nth-of-type(-n + 3) {
+      margin-bottom: 100px;
+    }
+    .services__item_img {
+      width: 60px;
+      background-image: url(../images/section-icons/ALARM.svg);
+      background-repeat: no-repeat;
+      background-position: top center;
+    }
+  }
+  &__list li:nth-of-type(2) .services__item_img {
+    background-image: url(../images/section-icons/LINE_GRAPH.svg);
+  }
+
+  &__list li:nth-of-type(3) .services__item_img {
+    background-image: url(../images/section-icons/OK.svg);
+  }
+  &__list li:nth-of-type(4) .services__item_img {
+    background-image: url(../images/section-icons/BOOK_2.svg);
+  }
+
+  &__list li:nth-of-type(5) .services__item_img {
+    background-image: url(../images/section-icons/HOME.svg);
+  }
+  &__list li:nth-of-type(6) .services__item_img {
+    background-image: url(../images/section-icons/LINE_GRAPH.svg);
+  }
+  &__list_wrapper {
+    padding-left: 30px;
+  }
+}
